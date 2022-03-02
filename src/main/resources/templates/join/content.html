@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<body>
+<div th:block th:fragment="content">
+    <!-- 로그인 폼 -->
+    <from method="post" entype="multipart/form-data" action="/join/login">
+        <legend>로그인</legend>
+        <table>
+            <div id="div-id_tags_str">
+                <label for="name">ID:</label>
+                <input type="text" name="name" id="name" placeholder="Username" required="required"
+                       class="form-control">
+                <br>
+                <label for="pswd">PassWord:</label>
+                <input type="password" name="pswd" placeholder="Password" required="required" id="pswd"
+                       class="form-control">
+            </div>
+        </table>
+        <button type="submit" class="btn btn-primary float-right">Submit</button>
+    </from>
+</div>
+
+</body>
+</html>
