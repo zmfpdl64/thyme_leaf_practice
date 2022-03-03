@@ -6,13 +6,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Member {
-
+public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String passwd;
+    private String title;
+    private String content;
 
     public Long getId() {
         return id;
@@ -22,19 +21,21 @@ public class Member {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getPasswd() {
-        return passwd;
+    public String getContent() {
+        return content;
     }
 
-    public void setPasswd(String passwd) {
-        this.passwd = passwd;
+    public void setContent(String content) {
+        this.content = content;
     }
+
+
 }

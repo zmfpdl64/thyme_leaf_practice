@@ -32,3 +32,17 @@ utext 태그까지 출력이 가능하다
 
     Established locale country: <span th:text="${#locale.country}">US</span>.
 
+<h1>ORM 기술</h1>
+
+marven mariadb 여기서 implements 코드 가져온다.
+
+marven jpa 여기서도 implements 코드 가져온다.
+
+mariadb spring boot 를 검색해서 properties 설정을 한다.
+
+    spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+    spring.datasource.url=jdbc:mariadb://127.0.0.1:3307/mydb
+    spring.datasource.username=woojin
+    spring.datasource.password=1234
+    #spring.jpa.hibernate.ddl-auto=create-drop  실행될때마다 테이블이 생성되고 종료되면 테이블이 삭제된다.
+

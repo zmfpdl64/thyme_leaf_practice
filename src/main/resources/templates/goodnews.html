@@ -3,8 +3,14 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/join}"
       lang="kr">
-<div layout:fragment="content">
-    <h1>Good News</h1>
+<th:block layout:fragment="content">
+    <div class="container" height="800">
+        <h1 class="float-right">Good News123</h1>
+        <a role="button" class="btn btn-primary float-right">button</a>
+        <button class="btn btn-primary float-right">button2</button>
+        <button righ="10px" class="btn btn-primary" bottom="100px">button3</button>
+    </div>
 
-</div>
+
+</th:block>
 </html>
