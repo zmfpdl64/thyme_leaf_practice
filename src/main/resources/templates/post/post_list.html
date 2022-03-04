@@ -11,6 +11,22 @@
         </div>
         <div class="col-4">
             <a role="button" style="float:right;" class="btn btn-primary" href="/post_list/post_create">작성하기</a>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="post : ${posts}" onClick="location.href='/post_list/post_create'"
+                    style="cursor:pointer">
+                    <td th:text="${post.getId()}"></td>
+                    <td th:text="${post.getTitle()}"></td>
+                </tr>
+                </tbody>
+
+            </table>
         </div>
         <div class="col-4">
 
