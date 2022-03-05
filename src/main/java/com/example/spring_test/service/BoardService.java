@@ -25,9 +25,9 @@ public class BoardService {
         return boardRepository.findAll();
     }
 
-//    public Optional<Board> findOne(Long id) {
-//        return boardRepository.findById(id);
-//    }
+    public Optional<Board> findOne(Long id) {
+        return boardRepository.findById(id);
+    }
 
     public Optional<Board> findtitle(String title) {
         return boardRepository.findByTitle(title);
